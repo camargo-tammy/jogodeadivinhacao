@@ -22,3 +22,17 @@ elif(nivel == 2):
 elif(nivel == 3):
     print("5 tentativas, corajoso, rei do galinheiro! ✅💯💥")
     totaldeTentativas = 5
+
+
+for rodada in range (1, totaldeTentativas +1):
+    print("Tentativa {} de {}".format(rodada, totaldeTentativas) )
+    chute_str = input("Digite um número entre 1 a 100: ")
+    chute = int(chute_str)
+
+    if(chute <1 or >100):
+        print("Número invalido")
+        continue
+
+acertou = chute == numeroSecreto
+maior = chute > numeroSecreto
+menor = chute < numeroSecreto
